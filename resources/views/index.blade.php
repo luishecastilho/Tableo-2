@@ -42,7 +42,7 @@
 
         <div class="min-h-screen flex flex-col justify-center items-center">
             <div class="bg-gray-800 rounded-lg shadow-lg p-6 w-full max-w-xl">
-                <h1 class="text-2xl font-bold mb-4 text-center">Kanye West Quotes</h1>
+                <h1 class="text-2xl font-bold mb-4 text-center">Kanye West - Quotes</h1>
 
                 <button id="getQuotesButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4 w-full">
                     Get Quotes

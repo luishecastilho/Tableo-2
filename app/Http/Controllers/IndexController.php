@@ -2,7 +2,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Restaurant;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Http;
 
