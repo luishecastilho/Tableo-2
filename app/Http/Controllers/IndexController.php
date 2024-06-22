@@ -3,6 +3,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Restaurant;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Http;
 
 class IndexController extends Controller
 {
@@ -15,6 +17,14 @@ class IndexController extends Controller
 
     public function quotes()
     {
+        $response = Http::get($this->apiUrl.'quotes');
 
+        if ($response->successful()) {
+            $data = $response->json();
+
+            return Arr::random($data, 5);
+        }
+
+        return [];
     }
 }
